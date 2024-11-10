@@ -17,7 +17,10 @@ defmodule KnowledgeGraphWeb.Router do
   scope "/", KnowledgeGraphWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    live "/", KnowledgeGraphLive.Index
+
+    live "/knowledge-graph", KnowledgeGraphLive.Index
+    live "/knowledge-graph/:slug", KnowledgeGraphLive.Show
   end
 
   # Other scopes may use custom stacks.
