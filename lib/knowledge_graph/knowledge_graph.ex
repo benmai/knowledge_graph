@@ -8,7 +8,7 @@ end
 
 defmodule KnowledgeGraph.KnowledgeGraph do
   # Current working directory concatenated with the path to the nodes file
-  @nodes_path Path.join(__DIR__, "/nodes.json")
+  @nodes_path Path.join([:code.priv_dir(:knowledge_graph), "repo", "nodes.json"])
 
   def list_nodes() do
     @nodes_path
