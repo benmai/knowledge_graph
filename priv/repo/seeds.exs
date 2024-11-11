@@ -9,3 +9,10 @@
 #
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.
+
+alias KnowledgeGraph.Repo
+
+Path.join([:code.priv_dir(:knowledge_graph), "repo", "nodes.json"])
+|> File.read!()
+|> Poison.decode!(as: [%KnowledgeGraph.Node{}])
+|> Enum.each(fn node -> Repo.insert!(node) end)

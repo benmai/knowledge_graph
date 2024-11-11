@@ -17,7 +17,8 @@ defmodule KnowledgeGraph.Application do
       # Start a worker by calling: KnowledgeGraph.Worker.start_link(arg)
       # {KnowledgeGraph.Worker, arg},
       # Start to serve requests, typically the last entry
-      KnowledgeGraphWeb.Endpoint
+      KnowledgeGraphWeb.Endpoint,
+      KnowledgeGraphWeb.Presence
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

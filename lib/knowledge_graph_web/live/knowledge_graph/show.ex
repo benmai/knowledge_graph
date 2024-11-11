@@ -10,11 +10,11 @@ defmodule KnowledgeGraphWeb.KnowledgeGraphLive.Show do
   def handle_params(%{"slug" => slug}, _uri, socket) do
     {id, current_slug} = String.split(slug, "-", parts: 2) |> parse_id_slug_result()
 
-    node = KnowledgeGraph.KnowledgeGraph.get_node!(id)
+    node = KnowledgeGraph.Repo.get(KnowledgeGraph.Node, id)
 
     socket = assign(socket, node: node)
 
-    should_be_slug = Slug.slugify(node.title)
+    should_be_slug = Slug.slugify(node.name)
 
     if current_slug != should_be_slug do
       {:noreply,
@@ -39,7 +39,7 @@ defmodule KnowledgeGraphWeb.KnowledgeGraphLive.Show do
   def render(assigns) do
     ~H"""
     <.back navigate={~p"/knowledge-graph"}>Back</.back>
-    <h1 class="text-4xl font-bold text-center text-gray-800"><%= @node.title %></h1>
+    <h1 class="text-4xl font-bold text-center text-gray-800"><%= @node.name %></h1>
     <.markdown text={@node.description} />
     <ul>
       <%= for url <- @node.urls do %>

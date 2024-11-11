@@ -1,26 +1,22 @@
 [
     {
-      "id": "impostorsyndrome",
-      "title": "Impostor syndrome",
+      "name": "Impostor syndrome",
       "urls": ["https://en.wikipedia.org/wiki/Impostor_syndrome"],
       "description": "Doubting accomplishments, fear of being exposed as a fraud.",
       "links": []
     },
     {
-      "id": "eventsourcing",
-      "title": "Event Sourcing",
+      "name": "Event Sourcing",
       "urls": ["https://microservices.io/patterns/data/event-sourcing.html"],
       "description": "Pattern of using events as the source of truth for data storage."
     },
     {
-      "id": "golang",
-      "title": "Golang",
+      "name": "Golang",
       "urls": ["https://golang.org/"],
       "description": "Programming language. Go has a very powerful standard library, making it easy to write code without an excessive number of dependencies. It also has built-in support for open-source dependencies, so it doesn't require an external package manager."
     },
     {
-      "id": "javascript",
-      "title": "JavaScript",
+      "name": "JavaScript",
       "urls": [
         "https://www.javascript.com/",
         "https://en.wikipedia.org/wiki/JavaScript"
@@ -28,8 +24,7 @@
       "description": "Programming language."
     },
     {
-      "id": "typescript",
-      "title": "TypeScript",
+      "name": "TypeScript",
       "urls": ["https://www.typescriptlang.org/"],
       "description": "TypeScript is a strongly-typed variant of JavaScript. It adds additional safety and scalability at the cost of ease of project startup time.",
       "links": [
@@ -40,22 +35,19 @@
       ]
     },
     {
-      "id": "thedesignofeverydaythings",
-      "title": "The Design of Everyday Things",
+      "name": "The Design of Everyday Things",
       "urls": ["https://en.wikipedia.org/wiki/The_Design_of_Everyday_Things"],
       "description": "Maximize intuitive guidance in objects.",
       "links": []
     },
     {
-      "id": "mintopyramidprinciple",
-      "title": "The Minto Pyramid Principle",
+      "name": "The Minto Pyramid Principle",
       "urls": ["http://www.barbaraminto.com/"],
       "description": "A way to organize information to be maximally understandable. One of the more compelling pieces of this to me is to always start with somnething that you agree on.",
       "links": []
     },
     {
-      "id": "react",
-      "title": "React",
+      "name": "React",
       "urls": ["https://reactjs.org/"],
       "description": "An unopinionated JavaScript framework. The primary features are a) declarativeness and b) HTML-like syntax called JSX.",
       "links": [
@@ -66,8 +58,7 @@
       ]
     },
     {
-      "id": "stanfordducksyndrome",
-      "title": "Stanford duck syndrome",
+      "name": "Stanford duck syndrome",
       "urls": [
         "https://www.stanforddaily.com/2018/01/31/duck-syndrome-and-a-culture-of-misery/"
       ],
@@ -80,26 +71,22 @@
       ]
     },
     {
-      "id": "monkeyontheback",
-      "title": "Monkey on the back",
+      "name": "Monkey on the back",
       "urls": ["https://hbr.org/1999/11/management-time-whos-got-the-monkey"],
       "description": "When a manager doesn't give a subordinate the tools to meaningfully address a problem to the manager's satisfaction."
     },
     {
-      "id": "atomicdesign",
-      "title": "Atomic Design",
+      "name": "Atomic Design",
       "urls": ["https://bradfrost.com/blog/post/atomic-web-design/"],
       "description": "A way of creating design systems that emphasizes composability and reusability."
     },
     {
-      "id": "codelinting",
-      "title": "Code linting",
+      "name": "Code linting",
       "urls": ["https://en.wikipedia.org/wiki/Lint_(software)"],
       "description": "A tool to analyze source code to find errors as well as stylistic problems."
     },
     {
-      "id": "consciouesnesscompetence",
-      "title": "Consciouesness/competence model",
+      "name": "Consciouesness/competence model",
       "urls": [
         "https://en.wikipedia.org/wiki/Four_stages_of_competence",
         "https://medium.com/@zainabz/the-four-stages-of-competence-ee5c6046b205"
@@ -107,22 +94,17 @@
       "description": "There are four stages to knowledge acquisition:\n\n1. **Unconscious incompetence**: You don't know what you don't know.\n\n1. **Conscious incompetence**: You know what you don't know.\n\n1. **Conscious competence**: You know, but you have to think about it.\n\n1. **Unconscious competence**: You know, and you don't have to think about it.\n\n![](https://miro.medium.com/max/674/1*wQz9hug8PWf2ke0eqE3-yg.jpeg)"
     },
     {
-      "id": "captheorem",
-      "title": "CAP theorem",
+      "name": "CAP theorem",
       "urls": ["https://en.wikipedia.org/wiki/CAP_theorem"],
       "description": "Consitency, availability, partition-tolerance -- pick two."
     },
     {
-      "title": "Technical debt",
-      "id": "technicaldebt",
       "description": "Features of code which make it difficult to maintain or extend. While frequently taken on to hit deadlines, technical debt can also be the result of poor foresight.\n",
       "urls": [
         "https://hackernoon.com/there-are-3-main-types-of-technical-debt-heres-how-to-manage-them-4a3328a4c50c"
       ]
     },
     {
-      "title": "Code refactoring",
-      "id": "coderefactoring",
       "description": "When a developer rewrites code to be more extensible, legible, or maintainable.\n",
       "urls": [],
       "links": [
@@ -133,8 +115,7 @@
       ]
     },
     {
-      "title": "\"I\" statements",
-      "id": "istatements",
+      "name": "\"I\" statements",
       "description": "Feedback statements in the form **I feel _blank_ when you _blank_. Please _blank_.** They help the feedback receiver focus attention on the feedback giver rather than their own faults.\n",
       "urls": []
     }
