@@ -89,6 +89,8 @@ COPY --from=builder --chown=nobody:root /app/_build/${MIX_ENV}/rel/knowledge_gra
 
 COPY --from=flyio/litefs:0.5 /usr/local/bin/litefs /usr/local/bin/litefs
 
+COPY litefs.yml litefs.yml
+
 USER nobody
 
 # If using an environment that doesn't automatically reap zombie processes, it is
