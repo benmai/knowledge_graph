@@ -20,6 +20,7 @@ defmodule KnowledgeGraphWeb.Router do
     live "/", KnowledgeGraphLive.Index
 
     live "/knowledge-graph", KnowledgeGraphLive.Index
+    live "/knowledge-graph/create", KnowledgeGraphLive.Create
     live "/knowledge-graph/:slug", KnowledgeGraphLive.Show
   end
 

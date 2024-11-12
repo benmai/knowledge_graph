@@ -38,7 +38,6 @@ defmodule KnowledgeGraphWeb.KnowledgeGraphLive.Show do
 
   def render(assigns) do
     ~H"""
-    <.back navigate={~p"/knowledge-graph"}>Back</.back>
     <h1 class="text-4xl font-bold text-center text-gray-800"><%= @node.name %></h1>
     <.markdown text={@node.description} />
     <ul>
@@ -46,6 +45,7 @@ defmodule KnowledgeGraphWeb.KnowledgeGraphLive.Show do
         <li><a href={url}><%= url %></a></li>
       <% end %>
     </ul>
+    <.back navigate={~p"/knowledge-graph"}>Back</.back>
     """
   end
 end
