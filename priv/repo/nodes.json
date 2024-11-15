@@ -29,7 +29,7 @@
       "description": "TypeScript is a strongly-typed variant of JavaScript. It adds additional safety and scalability at the cost of ease of project startup time.",
       "links": [
         {
-          "id": "javascript",
+          "id": "JavaScript",
           "description": "TypeScript transpiles to JavaScript."
         }
       ]
@@ -52,7 +52,7 @@
       "description": "An unopinionated JavaScript framework. The primary features are a) declarativeness and b) HTML-like syntax called JSX.",
       "links": [
         {
-          "id": "javascript",
+          "id": "JavaScript",
           "description": "React is a framework written in JavaScript."
         }
       ]
@@ -65,7 +65,7 @@
       "description": "When a person puts effort into appearing effortless, when under the surface they are struggling.",
       "links": [
         {
-          "id": "impostorsyndrome",
+          "id": "Impostor Syndrome",
           "description": "Duck syndrome can contribute to impostor syndrome. When it appears that everyone else's work is effortless, the fact that one's own work is not is disturbing."
         }
       ]
@@ -109,7 +109,7 @@
       "urls": [],
       "links": [
         {
-          "id": "technicaldebt",
+          "id": "Technical debt",
           "description": "Code refactoring can be a way to combat technical debt, but when taken overboard can also contribute to it due to over-abstraction."
         }
       ]

@@ -91,7 +91,7 @@ COPY --from=flyio/litefs:0.5 /usr/local/bin/litefs /usr/local/bin/litefs
 
 COPY litefs.yml litefs.yml
 
-USER nobody
+# USER nobody
 
 # If using an environment that doesn't automatically reap zombie processes, it is
 # advised to add an init process such as tini via `apt-get install`

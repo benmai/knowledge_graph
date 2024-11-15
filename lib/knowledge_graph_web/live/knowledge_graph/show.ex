@@ -1,5 +1,6 @@
 defmodule KnowledgeGraphWeb.KnowledgeGraphLive.Show do
   use KnowledgeGraphWeb, :live_view
+  alias KnowledgeGraph.Nodes
 
   import KnowledgeGraphWeb.CustomComponents
 
@@ -10,7 +11,7 @@ defmodule KnowledgeGraphWeb.KnowledgeGraphLive.Show do
   def handle_params(%{"slug" => slug}, _uri, socket) do
     {id, current_slug} = String.split(slug, "-", parts: 2) |> parse_id_slug_result()
 
-    node = KnowledgeGraph.Repo.get(KnowledgeGraph.Node, id)
+    node = Nodes.get_node(id)
 
     socket = assign(socket, node: node)
 
@@ -41,7 +42,7 @@ defmodule KnowledgeGraphWeb.KnowledgeGraphLive.Show do
     <h1 class="text-4xl font-bold text-center text-gray-800"><%= @node.name %></h1>
     <.markdown text={@node.description} />
     <ul>
-      <%= for url <- @node.urls do %>
+      <%= for url <- @node.urls || [] do %>
         <li><a href={url}><%= url %></a></li>
       <% end %>
     </ul>

@@ -1,8 +1,9 @@
 defmodule KnowledgeGraphWeb.KnowledgeGraphLive.Index do
   use KnowledgeGraphWeb, :live_view
+  alias KnowledgeGraph.Nodes
 
   def mount(_params, _session, socket) do
-    nodes = KnowledgeGraph.Repo.all(KnowledgeGraph.Node)
+    nodes = Nodes.list_nodes()
     {:ok, assign(socket, nodes: nodes)}
   end
 
@@ -15,7 +16,11 @@ defmodule KnowledgeGraphWeb.KnowledgeGraphLive.Index do
     <ul>
       <%= for node <- @nodes do %>
         <.link navigate={~p"/knowledge-graph/#{node.id}"}>
-          <li><%= node.name %></li>
+          <li>
+            <%= node.name %> (Links: <%= Enum.count(node.links) %>, Back links: <%= Enum.count(
+              node.back_links
+            ) %>)
+          </li>
         </.link>
       <% end %>
     </ul>
